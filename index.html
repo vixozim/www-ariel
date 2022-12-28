@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+
+	<title>Ariel Car Rental</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+
+	<!-- FAVICON -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+
+	<!-- BOOTSTRAP -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<!-- ICONS -->
+	<link rel="stylesheet" href="css/icons/fontawesome/css/style.css">
+	<link rel="stylesheet" href="css/icons/themify/style.css">
+	<link rel="stylesheet" href="css/icons/ionicons/css/style.css">
+	<link rel="stylesheet" href="css/icons/icomoon/style.css">
+
+	<!-- THEME / PLUGIN CSS -->
+	<link rel="stylesheet" href="js/vendors/flexslider/flexslider.css">
+	<link rel="stylesheet" href="js/vendors/slick/slick.css">
+	<link rel="stylesheet" href="js/vendors/swipebox/css/swipebox.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- SKIN -->
+	<link rel="stylesheet" title="blue" href="css/skins/skin-blue.css"/>
+
+	<!-- DATEPICKER -->
+
+	
+<link rel="stylesheet" type="text/css" href="daterangepicker-master/daterangepicker.css" />
+<link rel="stylesheet" href="js/jquery-timepicker-1.3.5/jquery.timepicker.min.css">
+
+    
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+<style>
+
+@media only screen and (min-width: 993px)  and (max-width: 4000px)  {
+.inicio{
+padding: 80px 0px 80px;
+
+}}
+
+
+@media only screen and (min-width: 400px)  and (max-width: 767px)  {
+.inicio{
+padding: 10px 0px 80px;
+
+}}
+
+</style>
+
+
+
+</head>
+<body>
+
+
+
+	<!--  MODALES LOGIN -->
+	
+<div id="reservas" class="modal fade">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+           
+            <div class="modal-body">
+                <div class="row">
+				
+				 <div class="col-md-12">
+                        <div class="tabs-wrapper content-tabs">
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a href="#item-description" data-toggle="tab" class="trn">Mis Reservas</a></li>
+                                <li><a href="#reviews" data-toggle="tab" class="trn">Iniciar Sesión</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane fade in active" id="item-description">
+                                  <div class="form-group">
+								<label class="form-group trn">Correo Electrónico</label>
+                                    <div class="form-group"><input class="form-control apiom_email" type="text" ></div>
+                                </div>
+                                <div class="form-group">
+								<label class="form-group trn" >Nº de confirmación</label>
+                                    <div class="form-group"><input id="apiom_ confirmation_number" class="form-control " type="text" ></div>
+                                </div>
+                                
+                                <div class="text-center-lg">
+                                    <a class="forgot-password trn" href="#" data-toggle="modal" data-target="#numero">¿No sabes cual es tu Nº de confirmación?</a>
+                                </div></br>
+                                <div class="form-group">
+                                    <a id="apiom_ submit_mis_reserva" class="btn btn-default trn  text-center" href="#">IR A LA RESERVA</a>
+                                </div>
+                                </div>
+                                <div class="tab-pane fade" id="reviews">
+                                  
+                               
+							  
+                                <div class="form-group">
+								<label class="form-group trn" >Correo Electrónico</label>
+                                    <div class="form-group"><input class="form-control apiom_ email" type="text" ></div>
+                                </div>
+                                <div class="form-group">
+								<label class="form-group trn" >Contraseña</label>
+                                    <div class="form-group"><input id="apiom_ password" class="form-control" type="password" ></div>
+                                </div>
+                                
+                                <div class=" text-center-lg">
+                                    <a class="forgot-password" href="#" data-toggle="modal" data-target="#contraseña">¿Olvidaste tu contraseña?</a>
+                                </div>
+								  <div class=" text-center-lg">
+                                    <a class="forgot-password trn" href="#" data-toggle="modal" data-target="#registrarse">¿Primera vez? <span style="text-decoration:underline;">REGISTRATE</span></a>
+                                </div></br>
+                                <div class="form-group">
+                                    <a id="apiom_ submit_login" class="btn btn-default trn  text-center" href="#">INICIAR SESIÓN</a>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+ <div id="numero" class="modal fade">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          
+            <div class="modal-body">
+                <button type="button" class="bootbox-close-button close" data-dismiss="modal" aria-hidden="true">×</button>
+              <div class="row">
+                    <div class="col-md-12">
+						<div class="media-body text-center-lg trn">Te eviaremos tu Nº de reserva al mail registrado en nuestro sistema.</div></br>
+						 <div class="form-group">
+								<label class="form-group trn" >Email</label>
+                                    <div class="form-group trn"><input class="form-control" type="text" ></div>
+                                </div>
+                               
+                                <div class="form-group">
+                                    <a class="btn btn-default  trn text-center" href="#">Enviar</a>
+                                </div>
+                    </div>
+					 </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div id="contraseña" class="modal fade">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          
+            <div class="modal-body">
+                <button type="button" class="bootbox-close-button close" data-dismiss="modal" aria-hidden="true">×</button>
+              <div class="row">
+                    <div class="col-md-12">
+						<div class="media-body text-center-lg trn">Te eviaremos tu contraseña al mail registrado en nuestro sistema.</div></br>
+						 <div class="form-group">
+								<label class="form-group trn" >Email</label>
+                                    <div class="form-group"><input class="form-control" type="text" ></div>
+                                </div>
+                               
+                                <div class="form-group">
+                                    <a class="btn btn-default trn  text-center" href="#">Enviar</a>
+                                </div>
+                    </div>
+					 </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	
+	<div id="registrarse" class="modal fade">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+          
+            <div class="modal-body">
+			 <button type="button" class="bootbox-close-button close" data-dismiss="modal" aria-hidden="true">×</button>
+			<div class="modal-header row form-group">
+                                   
+                                    <h3 class="trn">Registrate</h3>
+                                </div></br>
+               
+              <div class="row">
+                    <div class="col-md-12" style="margin-top: 0px;">
+						
+								<div class="row">
+								 <div class="col-md-6" style="margin-top: 0px;">
+								<div class="form-group">
+								<label class="form-group trn" >Nombre</label>
+                                    <div class="form-group"><input class="form-control" type="text" ></div>
+                                </div>
+								 </div>
+								  <div class="col-md-6" style="margin-top: 0px;">
+								<div class="form-group">
+								<label class="form-group trn" >Apellido</label>
+                                    <div class="form-group"><input class="form-control" type="text" ></div>
+                                </div>
+								 </div>
+								 <div class="col-md-12" style="margin-top: 0px;">
+						 <div class="form-group">
+								<label class="form-group trn" >Email</label>
+                                    <div class="form-group"><input class="form-control" type="text" ></div>
+                                </div>
+								 </div>
+                                 <div class="col-md-6"style="margin-top: 0px;">
+                               <div class="form-group">
+								<label class="form-group  trn" >Contraseña</label>
+                                    <div class="form-group"><input class="form-control" type="password" ></div>
+                                </div>
+								 </div>
+								 <div class="col-md-6" style="margin-top: 0px;">
+								<div class="form-group">
+								<label class="form-group trn" >Repetir Contraseña</label>
+                                    <div class="form-group"><input class="form-control" type="password" ></div>
+                                </div>
+								 </div>
+								  </div>
+								  <div class="col-md-12 text-center" style="margin-top: 0px;">
+                                <div class="form-group">
+                                    <a class="btn btn-default trn  text-center" href="#" style="margin-left: auto;margin-right: auto;">Enviar</a>
+                                </div>
+								  </div>
+                    </div>
+					 </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	
+	<!-- END MODALES LOGIN -->
+
+<div id="page-top"></div>
+    
+	
+	
+	
+	
+<div id="wrapper">
+	<!-- HEADER -->
+	<header>
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header pull-left">
+					<!-- Logo -->
+					<a class="navbar-brand" href="index.html">	<img  src="images/LOGO-ariel.png" alt=""></a>
+				</div>
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+				<!-- <div class="top-contact pull-right editContent"> -->
+					<!-- <i class="icon-phone"></i> <span class="trn">Llámenos</span>0810 1234 5678 -->
+				<!-- </div> -->
+				<!-- Navmenu -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="empresa.html" class="trn" >Empresa</a></li>
+						<li><a href="oficinas.html" class="trn" >Oficinas</a></li>
+						<li><a href="flota.html" class="trn" >Flota</a></li>
+					
+							
+						<li class="dropdown"><a class="apiom_ul_monedas"  href="#" >$ARS</a>
+						<ul id="apiom_ulMonedaUsuario" class="dropdown-menu" role="menu">
+								<li class="" data-to-currency="ARS" id="ARS"><a href="#">$ (ARS)</a></li>
+								<li class="" data-to-currency="USD" id="USD"><a href="#">US$ (USD)</a></li>
+								<li class="" data-to-currency="EUR" value="EUR" id="EUR"><a href="#">€ (EUR)</a></li>
+								<li class="" data-to-currency="BRL" value="BRL" id="BRL"><a href="#">R$ (BRL)</a></li>
+								<li class="" data-to-currency="UYU" value="UYU" id="UYU"><a href="#">$ (UYU)</a></li>
+								
+							</ul>
+						
+						</li>
+							<li class="dropdown"><a class="lang_selector" id="idiomaES" data-value="es"
+								onclick="setIdioma('ES', true);$('#idiomaSelector').html(getIdiomaCompleto())"><img class="bg-esp"  src="images/flag.png" alt=""></a>
+						<ul class="dropdown-menu" role="menu">
+						
+					
+													<li><a   class="lang_selector" id="idiomaEN" data-value="en" onclick="setIdioma('EN', true);$('#idiomaSelector').html(getIdiomaCompleto())"  ><img class="bg-bra" src="images/flag-uk.png" alt="">&nbsp; <span  class="trn">Inglés</span></a></li>
+													<li><a   class="lang_selector" id="idiomaPT" data-value="pt" onclick="setIdioma('PT', true);$('#idiomaSelector').html(getIdiomaCompleto())"><img class="bg-ing trn" src="images/flag-br.png" alt="">&nbsp; <span  class="trn">Portugués</span></a></li>
+							</ul>
+						
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- HEADER -->
+
+	<!-- INTRO HEAD -->
+	<div class="intro5">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row center-content inicio" >
+				<div  class="col-md-6 col-md-push-6 col-sm-5 col-sm-push-7 content-desktop">
+					<h2 class="text-right trn">Mejores Autos, Mejores Precios</h2>
+					<ul class="check-list white-text ">
+						<li class="trn"><span class="icon-check"></span> Atención personalizada</li>
+						<li class="trn"><span class="icon-phone"></span> Atención teléfonica las 24hrs</li>
+						<li class="trn"><span class="icon-like"></span> Más de 1.000 clientes satisfechos</li>
+					</ul>
+					
+				</div>
+
+				<div class="col-md-6 col-md-pull-6 col-sm-7 col-sm-pull-5">
+					
+					<p>&nbsp;</p>
+					<form class="introform" action="#"   method="POST">
+						<h4 id="content-mobile" class="trn">Alquiler de Autos en <span class="text-color-skin-red" style="text-shadow: 1px 1px #fff;">República Dominicana</span></h4>
+					
+						<div class="row">
+							<div class="col-xs-6 col-sm-12 col-md-6">
+								<select id="apiom_ciudad_desde"  class="form-control" placeholder="Ciudad Desde">
+									<option>Ciudad Desde</option>
+																	   <option value='Bariloche'>Bariloche</option>
+																	   <option  value='Salta'>Salta</option>
+								</select>
+							
+							</div>
+							<div class="col-xs-6 col-sm-12 col-md-6">
+								<select id="apiom_ciudad_hasta"  class="form-control" placeholder="Ciudad Hasta">
+									<option>Ciudad Hasta</option>
+																	   <option value='Bariloche'>Bariloche</option>
+																	   <option  value='Salta'>Salta</option>
+								</select>
+						
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6 col-sm-12 col-md-6">
+								<input id="apiom_fecha_desde" type="text" name="datefilter"    class="form-control trn" placeholder="Fecha desde">
+							</div>
+							<div class="col-xs-6 col-sm-12 col-md-6">
+								 <input id="apiom_hora_desde" type="time" onchange="onTimeChange()"  class="timeInput form-control trn" placeholder="Hora desde">
+
+								
+								
+							</div>
+						
+						</div>
+						<div class="row">
+							<div class="col-xs-6 col-sm-12 col-md-6">
+								<input id="apiom_fecha_hasta" type="text" name="datefilter"  class="form-control trn" placeholder="Fecha hasta">
+							</div>
+							<div class="col-xs-6 col-sm-12 col-md-6">
+								<input id="apiom_hora_hasta" type="time" class="form-control trn" placeholder="Hora hasta" >
+							</div>
+							
+						</div>
+						<div class="row">
+							<div class="col-xs-6 col-sm-12 col-md-6">
+								<input id="apiom_codigo_tarifa" type="text" class="form-control trn" placeholder="Código Promocional" >
+							</div>
+							<div class="col-xs-6 col-sm-12 col-md-6">
+								<button id="apiom_submit_search" type="submit" class="btn btn-default trn btn-block btn-ico text-center">Buscar auto <i class="fa fa-search"></i></button>
+							</div>
+						
+						</div>
+					
+						
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- INTRO HEAD -->
+
+
+	<!-- SERVICES -->
+	<div class="service-content" id="services">
+		<div class="container">
+			<h2 class="trn">Nuestros servicios</h2>
+			<div class="row">
+				<div class="col-md-3 col-sm-6">
+					<div class="icon-box text-center">
+						<span class="ico">
+						<i class="fa icon-clock fa-stack-1x fa-inverse"></i>
+						</span>
+						<h4 class="trn">Atención 24 HS</h4>
+						<a href="tel:8092586563"><p class="trn">CEL: 809-2586563</p></a>
+						<a href="tel:8092586563"><p class="trn">CEL: 809-852-9976</p></a>
+						<a href="mailto:arielcarrentar@gmail.com"><p class="trn">arielcarrentar@gmail.com</p></a>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="icon-box text-center">
+						<span class="ico">
+						<i class="fa icon-up-arrow fa-stack-1x fa-inverse"></i>
+						</span>
+						<h4 class="trn">Upgrade de Vehículo</h4>
+						
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="icon-box text-center">
+						<span class="ico">
+						<i class="fa icon-users fa-stack-1x fa-inverse"></i>
+						</span>
+						<h4 class="trn">Personal Capacitado </h4>
+						
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="icon-box text-center">
+						<span class="ico">
+						<i class="fa icon-smile fa-stack-1x fa-inverse"></i>
+						</span>
+						<h4 class="trn">Protocolos de COVID</h4>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- SERVICES -->
+
+	
+
+	<!-- DUAL CONTENT -->
+	<div class="dual-content" id="dual-info">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="dual-img"></div>
+				<div class="col-md-6">
+				</div>
+				<div class="col-md-6">
+					<div class="col-md-10">
+						<div class="dc-info" style="padding: 40px 60px 40px;">
+							<h4 class="trn">Requisitos</h4>
+							<p class="trn" style="font-weight: bold;">Para persona natural es indispensable contar con:</p>
+							<ul class="space30">
+								<li class="trn" style="color:#ffffff;"><span class="fa fa-check list-icon"></span><span class="trn">Licencia vigente del país</span></li>
+								<li class="trn" style="color:#ffffff;"><span class="fa fa-check list-icon"></span><span class="trn">Documento de identidad</span></li>
+								<li class="trn" style="color:#ffffff;"> <span class="fa fa-check list-icon"></span><span class="trn">Tarjeta de crédito para garantía</span></li>
+							</ul>
+							<p class="trn" style="font-weight: bold;">Para empresas es indispensable contar con:</p>
+							
+							<ul class="space30">
+								<li class="trn" style="color:#ffffff;"><span class="fa fa-check list-icon"></span><span class="trn">Cámara y comercio</span></li>
+								<li class="trn" style="color:#ffffff;"><span class="fa fa-check list-icon"></span><span class="trn">Carta del representante autorizando al conductor</span></li>
+								<li class="trn" style="color:#ffffff;"><span class="fa fa-check list-icon"></span><span class="trn">Tarjeta de crédito para garantía</span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- DUAL CONTENT -->
+	
+	
+	
+
+	
+	
+	
+	
+	<div class="" id="" style=" padding-top: 30px; padding-bottom:30px;">
+		<div class="container">
+			<div class="row">
+				<div class="content-head  text-center">
+					<h2 class="trn">Preguntas Frecuentes</h2>
+					<p class="trn">¿Tenés dudas?, te las respondemos.</p>
+				</div>
+			</div>
+			<div class="row">
+			
+			
+			<article class="col-md-6 " style="padding-bottom:20px;">
+					
+						<div class="">
+				<div class="panel-group payments-options" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel radio panel-default">
+                               
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed trn" data-toggle="collapse" data-parent="#accordion" href="#pregunta1" aria-expanded="false" aria-controls="collapseTwo">
+                                             <i class="fa fa-question-circle"></i> <span class="trn">¿Es indispensable la tarjeta de credito para garantia?</span>
+                                        </a>
+										
+                                    </h4>
+                                </div>
+                                <div id="pregunta1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2" aria-expanded="false" style="height: 0px;">
+                                    
+                                    <p class="trn">Si es indispensable ya que con ella se constituye el depósito en garantía para cubrir novedades como partes de tránsito o daños al vehículo.</p>
+                               
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingThree">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed trn" data-toggle="collapse" data-parent="#accordion" href="#pregunta2" aria-expanded="false" aria-controls="collapseThree">
+                                            <i class="fa fa-question-circle"></i><span class="trn"> ¿La tarjeta de credito debe ser del titular de la reserva?</span>
+                                        </a>
+                               
+                                    </h4>
+                                </div>
+                                <div id="pregunta2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3" aria-expanded="false" style="height: 0px;">
+								  
+								   
+								    <p class="trn">No es posible presentar otra tarjeta siempre y cuando el titular de la misma este presente al recoger el vehículo para firmar el contrato.</p>
+								
+								</div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="heading4">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed trn" data-toggle="collapse" data-parent="#accordion" href="#pregunta3" aria-expanded="false" aria-controls="pregunta3">
+                                             <i class="fa fa-question-circle"></i> <span class="trn">¿Que tipo de tarjetas de credito se reciben?</span>
+                                        </a>
+                                        <span class="overflowed pull-right" id="content-desktop">
+                                    <span style="font-size: 1.2em;color:#b2b2b2;"> <img src="assets/img/preview/payments/ahora.png" alt=""></span>
+                                    
+                                </span>
+                                    </h4>
+                                </div>
+                                <div id="pregunta3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4" aria-expanded="false">
+							  <p class="trn">Visa, MasterCard, American express y Discovery. expedidas por banco, físicas y con relieve, no se admiten tarjetas débito, recargables, virtuales o planas.</p>
+								</div>
+                            </div>
+							
+                        </div>
+						
+						 
+						
+						</div>
+						</div>
+				</article>
+				
+				
+				<article class="col-md-6 " style="padding-bottom:20px;">
+					
+						<div class="">
+				<div class="panel-group payments-options" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel radio panel-default">
+                               
+                           
+							<div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="heading4">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed trn" data-toggle="collapse" data-parent="#accordion" href="#pregunta4" aria-expanded="false" aria-controls="pregunta3">
+                                             <i class="fa fa-question-circle"></i> <span class="trn">¿El vehiculo que se entrega es exactamente el elegido?</span>
+                                        </a>
+                                        <span class="overflowed pull-right" id="content-desktop">
+                                    <span style="font-size: 1.2em;color:#b2b2b2;"> <img src="assets/img/preview/payments/ahora.png" alt=""></span>
+                                    
+                                </span>
+                                    </h4>
+                                </div>
+                                <div id="pregunta4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4" aria-expanded="false">
+							  <p class="trn">Lo que se elige es una gama por lo cual se entregara un vehículo perteneciente a la gama elegida.</p>
+								</div>
+                            </div>
+							<div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="heading4">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed trn" data-toggle="collapse" data-parent="#accordion" href="#pregunta5" aria-expanded="false" aria-controls="pregunta5">
+                                             <i class="fa fa-question-circle"></i> <span class="trn">¿Que incluye el costo de la renta?</span>
+                                        </a>
+                                        <span class="overflowed pull-right" id="content-desktop">
+                                    <span style="font-size: 1.2em;color:#b2b2b2;"> <img src="assets/img/preview/payments/ahora.png" alt=""></span>
+                                    
+                                </span>
+                                    </h4>
+                                </div>
+                                <div id="pregunta5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4" aria-expanded="false">
+							  <p class="trn">Incluye días de renta pactados, kilometraje ilimitado, tránsito a nivel nacional, asistencia 24/7. </p>
+								</div>
+                            </div>
+							<div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="heading4">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed trn" data-toggle="collapse" data-parent="#accordion" href="#pregunta6" aria-expanded="false" aria-controls="pregunta6">
+                                             <i class="fa fa-question-circle"></i><span class="trn"> ¿Que NO incluye el costo de la renta?</span>
+                                        </a>
+                                        <span class="overflowed pull-right" id="content-desktop">
+                                    <span style="font-size: 1.2em;color:#b2b2b2;"> <img src="assets/img/preview/payments/ahora.png" alt=""></span>
+                                    
+                                </span>
+                                    </h4>
+                                </div>
+                                <div id="pregunta6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4" aria-expanded="false">
+							  <p class="trn">No incluye lavado, gasolina, parqueaderos, costos de entrega o recepción en un lugar diferente a la agencia incluido aeropuerto, partes de tránsito, deducibles de seguro, gastos de reparaciones, perdida de documentos horas extras, días adicionales o cualquier otro costo diferente a los días pactados de renta.</p>
+								</div>
+                            </div>
+                        </div>
+						
+						 
+						
+						</div>
+						</div>
+				</article>
+			
+			
+				
+				<div class="content-head  text-center">
+				<a href="preguntas-frecuentes.html" class="btn btn-default trn">Ver Más faq</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+	
+
+
+
+	<!-- FOOTER -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<h1 class="footer-logo"><a href="index.html">ARIEL CAR RENTAL </a></h1>
+					<p class="trn">EL MEJOR SERVICIO</p>
+					<ul class="footer-social">
+						
+						<li><a href="https://www.instagram.com/ariel_carrentar/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<h4 class="trn">Menú</h4>
+					<div class="row">
+						<div class="col-md-12">
+							<ul class="footer-list">
+								<li><a class="trn" href="empresa.html">Nuestra Empresa</a></li>
+								<li><a class="trn" href="oficinas.html">Otras Oficinas</a></li>
+								<li><a class="trn" href="flota.html">Nuestra Flota</a></li>
+								
+							</ul>
+						</div>
+					
+					</div>
+				</div>
+				<div class="col-md-4">
+					<h4 class="trn">Contactanos</h4>
+					<a class="text-color-skin-blue" href="https://walink.co/1fc699" target="_blank" style="font-size: 1.8em;"><i class="fa fa-whatsapp"></i> &nbsp;809-258-6563</a>
+					<p><i class="fa fa-map"></i> Aeropuerto Las americas # 50</p>
+					<p><i class="fa fa-phone"></i> <a href="tel:8098529976 "> &nbsp;809-852-9976 </a></p>
+					
+					<br>
+					<p class="trn">&copy; 2022. Ariel Renta Car. Todos los derechos reservados.</p>
+					<p class="trn">Powered by <a href="https://onemobility.tech/" target="_blank"><img src="images/logo-onemobility.png" width="100px"/></a></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- FOOTER -->
+</div>
+
+
+
+
+
+
+<!-- JAVASCRIPT =============================-->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/vendors/flexslider/flexslider.js"></script>
+<script src="js/vendors/slick/slick.min.js"></script>
+<script src="js/vendors/jquery.placeholder.js"></script>
+<script src="js/vendors/jquery.easing.min.js"></script>
+<script src="js/vendors/mc/jquery.ketchup.all.min.js"></script>
+<script src="js/vendors/mc/main.js"></script>
+<script src="js/vendors/jquery.countdown.min.js"></script>
+<script src="js/vendors/swipebox/js/jquery.swipebox.min.js"></script>
+<script src="js/main.js"></script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+<script src="js/jquery-timepicker-1.3.5/jquery.timepicker.min.js"></script>
+
+<script type="text/javascript">
+	$(function() {
+	
+	  $('input[name="datefilter"]').daterangepicker({
+		  autoUpdateInput: false,
+		  locale: {
+			  cancelLabel: 'Clear'
+		  }
+	  });
+	
+	  $('input[name="datefilter"]').on('apply.daterangepicker', function(ev, picker) {
+		  $(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
+	  });
+	
+	  $('input[name="datefilter"]').on('cancel.daterangepicker', function(ev, picker) {
+		  $(this).val('');
+	  });
+	
+	});
+	</script>
+
+<script>
+	var inputEle = document.getElementById('.timeInput');
+
+
+function onTimeChange() {
+  var timeSplit = inputEle.value.split(':'),
+    hours,
+    minutes,
+    meridian;
+  hours = timeSplit[0];
+  minutes = timeSplit[1];
+  if (hours > 12) {
+    meridian = 'PM';
+    hours -= 12;
+  } else if (hours < 12) {
+    meridian = 'AM';
+    if (hours == 0) {
+      hours = 12;
+    }
+  } else {
+    meridian = 'PM';
+  }
+  alert(hours + ':' + minutes + ' ' + meridian);
+}
+	</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+
+	<title>Terminos & Condiciones | Ariel Car Rental</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+
+	<!-- FAVICON -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+
+	<!-- BOOTSTRAP -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<!-- ICONS -->
+	<link rel="stylesheet" href="css/icons/fontawesome/css/style.css">
+	<link rel="stylesheet" href="css/icons/themify/style.css">
+	<link rel="stylesheet" href="css/icons/ionicons/css/style.css">
+	<link rel="stylesheet" href="css/icons/icomoon/style.css">
+
+	<!-- THEME / PLUGIN CSS -->
+	<link rel="stylesheet" href="js/vendors/flexslider/flexslider.css">
+	<link rel="stylesheet" href="js/vendors/slick/slick.css">
+	<link rel="stylesheet" href="js/vendors/swipebox/css/swipebox.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- SKIN -->
+	<link rel="stylesheet" title="blue" href="css/skins/skin-blue.css"/>
+
+    
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+
+	<!--  MODALES LOGIN -->
+	
+<div id="reservas" class="modal fade">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+           
+            <div class="modal-body">
+                <div class="row">
+				
+				 <div class="col-md-12">
+                        <div class="tabs-wrapper content-tabs">
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a href="#item-description" data-toggle="tab" class="trn">Mis Reservas</a></li>
+                                <li><a href="#reviews" data-toggle="tab" class="trn">Iniciar Sesión</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane fade in active" id="item-description">
+                                  <div class="form-group">
+								<label class="form-group trn" >Correo Electrónico</label>
+                                    <div class="form-group"><input class="form-control apiom_email" type="text" ></div>
+                                </div>
+                                <div class="form-group">
+								<label class="form-group trn" >Nº de confirmación</label>
+                                    <div class="form-group"><input id="apiom_ confirmation_number" class="form-control " type="text" ></div>
+                                </div>
+                                
+                                <div class="text-center-lg">
+                                    <a class="forgot-password trn" href="#" data-toggle="modal" data-target="#numero">¿No sabes cual es tu Nº de confirmación?</a>
+                                </div></br>
+                                <div class="form-group">
+                                    <a id="apiom_ submit_mis_reserva" class="btn btn-default trn  text-center" href="#">IR A LA RESERVA</a>
+                                </div>
+                                </div>
+                                <div class="tab-pane fade" id="reviews">
+                                  
+                               
+							  
+                                <div class="form-group">
+								<label class="form-group trn" >Correo Electrónico</label>
+                                    <div class="form-group"><input class="form-control apiom_ email" type="text" ></div>
+                                </div>
+                                <div class="form-group">
+								<label class="form-group trn" >Contraseña</label>
+                                    <div class="form-group"><input id="apiom_ password" class="form-control" type="password" ></div>
+                                </div>
+                                
+                                <div class=" text-center-lg">
+                                    <a class="forgot-password" href="#" data-toggle="modal" data-target="#contraseña">¿Olvidaste tu contraseña?</a>
+                                </div>
+								  <div class=" text-center-lg">
+                                    <a class="forgot-password trn" href="#" data-toggle="modal" data-target="#registrarse">¿Primera vez? <span style="text-decoration:underline;">REGISTRATE</span></a>
+                                </div></br>
+                                <div class="form-group">
+                                    <a id="apiom_ submit_login" class="btn btn-default trn  text-center" href="#">INICIAR SESIÓN</a>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+ <div id="numero" class="modal fade">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          
+            <div class="modal-body">
+                <button type="button" class="bootbox-close-button close" data-dismiss="modal" aria-hidden="true">×</button>
+              <div class="row">
+                    <div class="col-md-12">
+						<div class="media-body text-center-lg trn">
+                                   
+                                    Te eviaremos tu Nº de reserva al mail registrado en nuestro sistema.
+                                </div></br>
+						 <div class="form-group">
+								<label class="form-group trn" >Email</label>
+                                    <div class="form-group trn"><input class="form-control" type="text" ></div>
+                                </div>
+                               
+                                <div class="form-group">
+                                    <a class="btn btn-default  trn text-center" href="#">Enviar</a>
+                                </div>
+                    </div>
+					 </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div id="contraseña" class="modal fade">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          
+            <div class="modal-body">
+                <button type="button" class="bootbox-close-button close" data-dismiss="modal" aria-hidden="true">×</button>
+              <div class="row">
+                    <div class="col-md-12">
+						<div class="media-body text-center-lg trn">
+                                   
+                                    Te eviaremos tu contraseña al mail registrado en nuestro sistema.
+                                </div></br>
+						 <div class="form-group">
+								<label class="form-group trn" >Email</label>
+                                    <div class="form-group"><input class="form-control" type="text" ></div>
+                                </div>
+                               
+                                <div class="form-group">
+                                    <a class="btn btn-default trn  text-center" href="#">Enviar</a>
+                                </div>
+                    </div>
+					 </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	
+	<div id="registrarse" class="modal fade">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+          
+            <div class="modal-body">
+			 <button type="button" class="bootbox-close-button close" data-dismiss="modal" aria-hidden="true">×</button>
+			<div class="modal-header row form-group">
+                                   
+                                    <h3 class="trn">Registrate </h3>
+                                </div></br>
+               
+              <div class="row">
+                    <div class="col-md-12" style="margin-top: 0px;">
+						
+								<div class="row">
+								 <div class="col-md-6" style="margin-top: 0px;">
+								<div class="form-group">
+								<label class="form-group trn" >Nombre</label>
+                                    <div class="form-group"><input class="form-control" type="text" ></div>
+                                </div>
+								 </div>
+								  <div class="col-md-6" style="margin-top: 0px;">
+								<div class="form-group">
+								<label class="form-group trn" >Apellido</label>
+                                    <div class="form-group"><input class="form-control" type="text" ></div>
+                                </div>
+								 </div>
+								 <div class="col-md-12" style="margin-top: 0px;">
+						 <div class="form-group">
+								<label class="form-group trn" >Email</label>
+                                    <div class="form-group"><input class="form-control" type="text" ></div>
+                                </div>
+								 </div>
+                                 <div class="col-md-6"style="margin-top: 0px;">
+                               <div class="form-group">
+								<label class="form-group  trn" >Contraseña</label>
+                                    <div class="form-group"><input class="form-control" type="password" ></div>
+                                </div>
+								 </div>
+								 <div class="col-md-6" style="margin-top: 0px;">
+								<div class="form-group">
+								<label class="form-group trn" >Repetir Contraseña</label>
+                                    <div class="form-group"><input class="form-control" type="password" ></div>
+                                </div>
+								 </div>
+								  </div>
+								  <div class="col-md-12 text-center" style="margin-top: 0px;">
+                                <div class="form-group">
+                                    <a class="btn btn-default trn  text-center" href="#" style="margin-left: auto;margin-right: auto;">Enviar</a>
+                                </div>
+								  </div>
+                    </div>
+					 </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	
+	<!-- END MODALES LOGIN -->
+
+<div id="page-top"></div>
+    
+<div id="wrapper">
+<!-- HEADER -->
+	<header>
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header pull-left">
+					<!-- Logo -->
+					<a class="navbar-brand" href="index.html">	<img  src="images/LOGO-ariel.png" alt=""></a>
+				</div>
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+				<!-- <div class="top-contact pull-right editContent"> -->
+					<!-- <i class="icon-phone"></i> <span class="trn">Llámenos</span>0810 1234 5678 -->
+				<!-- </div> -->
+				<!-- Navmenu -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="empresa.html" class="trn" >Empresa</a></li>
+						<li><a href="oficinas.html" class="trn" >Oficinas</a></li>
+						<li><a href="flota.html" class="trn" >Flota</a></li>
+					
+							
+						<li class="dropdown"><a class="apiom_ul_monedas"  href="#"  >$ARS</a>
+						<ul id="apiom_ulMonedaUsuario" class="dropdown-menu" role="menu">
+								<li class="" data-to-currency="ARS" id="ARS"><a href="#">$ (ARS)</a></li>
+								<li class="" data-to-currency="USD" id="USD"><a href="#">US$ (USD)</a></li>
+								<li class="" data-to-currency="EUR" value="EUR" id="EUR"><a href="#">€ (EUR)</a></li>
+								<li class="" data-to-currency="BRL" value="BRL" id="BRL"><a href="#">R$ (BRL)</a></li>
+								<li class="" data-to-currency="UYU" value="UYU" id="UYU"><a href="#">$ (UYU)</a></li>
+								
+							</ul>
+						
+						</li>
+						<li class="dropdown"><a class="lang_selector" id="idiomaES" data-value="es"
+							onclick="setIdioma('ES', true);$('#idiomaSelector').html(getIdiomaCompleto())"><img class="bg-esp"  src="images/flag.png" alt=""></a>
+					<ul class="dropdown-menu" role="menu">
+					
+				
+												<li><a   class="lang_selector" id="idiomaEN" data-value="en" onclick="setIdioma('EN', true);$('#idiomaSelector').html(getIdiomaCompleto())"  ><img class="bg-bra" src="images/flag-uk.png" alt="">&nbsp; <span  class="trn">Inglés</span></a></li>
+												<li><a   class="lang_selector" id="idiomaPT" data-value="pt" onclick="setIdioma('PT', true);$('#idiomaSelector').html(getIdiomaCompleto())"><img class="bg-ing trn" src="images/flag-br.png" alt="">&nbsp; <span  class="trn">Portugués</span></a></li>
+						</ul>
+						
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- HEADER -->
+	<!-- PAGE HEADER -->
+	<div class="page-head">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h1 class="page-header trn">Aceptación de los Términos y Condiciones</h1>
+					
+				</div>
+			</div>
+        </div>	
+	</div>
+	<!-- PAGE HEADER -->
+
+	
+	<div class="blog-single-excerpt container">
+		<div class="row">
+			<div class="col-md-12  col-sm-12">
+			<div class="vce-text-block-wrapper vce" id="el-92355f79" data-vce-do-apply="all el-92355f79">
+
+<p class="trn">Por favor lea estos Términos y Condiciones cuidadosamente antes de utilizar el sitio web de Ariel Rent a Car o hacer reservas. Se puede acceder a ellas a través de hipervínculo en el pie de cada página de nuestro sitio web. Le aconsejamos imprimirlas y guardar una copia.
+	El uso del sitio web de Ariel Rent a Car implica la aceptación sin reserva de estos Términos y Condiciones, los cuales incluyen nuestra Política de Privacidad.
+	Estos Términos y Condiciones son adicionales a las condiciones especiales válidas para cada tipo de producto o servicio ofrecido en el sitio.
+	</p>
+	<h3 class="trn">Uso</h3>
+<p class="trn">Usted se compromete a:</p>
+<p class="trn">(a) no utilizar el sitio Ariel Rent a Car con propósitos ilegales o con cualquier propósito que puedan dañar los derechos de Ariel Rent a Car o de terceros, y en particular, no utilizar el sitio para distribuir información dañosa o ilegal, o información que resulta de mal gusto, discriminatoria u ofensiva hacia Ariel Rent a Car o terceros;</p>
+<p class="trn">(b) no interrumpir el acceso al sitio web de Ariel Rent a Car, modificar el sitio, usarlo para transmitir virus informáticos, ataques piratas, gusanos informáticos, etc. o cometer infracciones graves que fueran posiblemente calificada como delitos informáticos;</p>
+<p class="trn">(c) no infringir patentes, marcas registradas, secretos comerciales, copyright, derechos sobre bases de datos o cualquier otro derecho de propiedad intelectual perteneciente a una persona física o jurídica;</p>
+<p class="trn">(d) no hacerse pasar por otra persona física o jurídica, incluyendo pero no limitándose a funcionarios de Ariel Rent a Car, o falsamente declarar o de cualquier forma tergiversar su vinculación con una persona física o jurídica;</p>
+<p class="trn">(e) cumplir con estas condiciones generales de uso.</p>
+<p class="trn">Si usted no cumpliera con estas obligaciones, Ariel Rent a Car se reserva el derecho de inmediatamente prohibir y bloquear el acceso a este sitio web y a su red.</p>
+
+<h3 class="trn">Información del Sitio</h3>
+<p class="trn">Si bien Ariel Rent a Car ha hecho su mejor esfuerzo para asegurarse que la información contenida en el sitio web Ariel Rent a Car es correcta al momento de subirla a este sitio web, Ariel Rent a Car no será responsable por cualquier error u omisión de por cualquier información que hubiera podido estar incompleta, ser inexacta o desactualizada.</p>
+
+
+<h3 class="trn">Aviso sobre Propiedad Intelectual / Copyright y marca registrada</h3>
+<p class="trn">El copyright y todos los derechos de propiedad en el sitio web Ariel Rent a Car y todos sus contenidos están reservados por Ariel Rent a Car. El material contenido dentro del sitio web de Ariel Rent a Car es propiedad de Ariel Rent a Car, a menos que estuviera identificado como perteneciente a un tercero. El nombre Ariel Rent a Car y cualquier otra marca, logo o gráfico mostrados en un sitio web Ariel Rent a Car son marcas registradas de Ariel Rent a Car o de sus afiliadas. Otras empresas o nombre de productos o servicios mostrados en el sitio web de Ariel Rent a Car puede ser marcas registradas de sus correspondientes propietarios.
+	Ningún derecho o licencia de uso de ninguna marca le es concedido, por lo tanto usted acuerda no modificar, rentar, alquilar, prestar, distribuir o crear trabajos derivados basados en forma total o parcial en los contenidos del sitio web Ariel Rent a Car y/o en los productos y servicios ofrecidos en un sitio web Ariel Rent a Car.
+</p>
+
+<h3 class="trn">Enlace a sitios web de terceros</h3>
+<p class="trn">Existen algunos lugares en todo el sitio web de Ariel Rent a Car que pueden enlazar a usted a otros sitios web que no operan bajo la información de prácticas de privacidad del sitio web de Ariel Rent a Car. Cuando usted hace clic hacia esos sitios web, ya no será aplicable la información de prácticas de privacidad del sitio web de Ariel Rent a Car. Le recomendamos revisar las declaraciones de privacidad de todos los sitios web de terceros para comprender sus procedimientos para recoger, utilizar y divulgar su información.
+</p>
+
+<h3 class="trn">Limitación de responsabilidad</h3>
+<p class="trn">Algunas jurisdicciones no admiten la exclusión de ciertas garantías o la limitación o exclusión de responsabilidad para el caso de daños emergentes. En consecuencia, algunas de las limitaciones mencionadas más arriba en esta sección pueden no ser aplicables. En particular, nada en estos Términos y Condiciones afectará los derechos de los consumidores o excluirá o restringirá cualquier responsabilidad por muerte o daños personales derivados de negligencia o engaño de Ariel Rent a Car. Usted expresamente acepta y acuerda que Ariel Rent a Car, sus funcionarios, directores y/o empleados no serán responsables de ningún daño directo o emergente, incluyendo pero no limitándose a, daños por lucro cesante, a la reputación, uso, datos o cualquier otra pérdida intangible, aun cuando Ariel Rent a Car hubiera advertido acerca de la posibilidad de tales daños, que resulten del uso del sitio web de Ariel Rent a Car. Usted expresamente acepta y acuerda que Ariel Rent a Car no será responsable por el uso o la imposibilidad de uso del sitio web de Ariel Rent a Car en los siguientes casos: (i) el costo de procurar servicios o productos sustitutos de cualquier mercancía, dato, información o servicio adquirido u obtenido o mensajes recibidos o transacciones contratados a través o desde un sitio web Ariel Rent a Car; (ii) el acceso no autorizado o el cambio de sus trasmisiones o datos; (iii) manifestaciones o conductas de cualquier tercero en un sitio web Ariel Rent a Car.
+</p>
+
+
+<h3 class="trn">Política de Privacidad</h3>
+<p class="trn">Las condiciones de la Política de Privacidad de Ariel Rent a Car son incorporadas a estos Términos y Condiciones. Usted presta conformidad al uso de la información personal por parte de Ariel Rent a Car de acuerdo y con la finalidad establecida en la Política de Privacidad de los sitios web Ariel Rent a Car.
+</p>
+
+<h3 class="trn">Política de Seguridad</h3>
+<p class="trn">Ariel Rent a Car utiliza tecnología segura a fin de salvaguardar la información personal y las transacciones financieras. Ariel Rent a Car cumple con los procedimientos y standards de seguridad tal como se detallan en la Política de Seguridad de Ariel Rent a Car.</p>
+
+
+<h3 class="trn">General</h3>
+<p class="trn">Cualquier falta o demora de Ariel Rent a Car en el ejercicio o aplicación de cualquier derecho o disposición de estos Términos y Condiciones no constituirá de manera alguna renuncia a tal derecho o disposición. Si una disposición de estos Términos y Condiciones es considerada inválida por un juzgado con competencia, las partes acuerdan que dicho juzgado deberá procurar tener en cuenta la intención que las partes tuvieron en cuenta en la disposición. Los restantes Términos y Condiciones permanecerán con pleno efecto. Los títulos en los Términos y Condiciones son solo para conveniencia y no tienen ningún efecto legal o contractual.</p>
+
+
+
+</div>
+				
+		</div>
+		
+		
+		</div>
+	</div>
+	
+	
+
+<!-- FOOTER -->
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<h1 class="footer-logo"><a href="index.html">ARIEL CAR RENTAL </a></h1>
+				<p class="trn">EL MEJOR SERVICIO</p>
+				<ul class="footer-social">
+					
+					<li><a href="https://www.instagram.com/ariel_carrentar/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+				</ul>
+			</div>
+			<div class="col-md-4">
+				<h4 class="trn">Menú</h4>
+				<div class="row">
+					<div class="col-md-12">
+						<ul class="footer-list">
+							<li><a class="trn" href="empresa.html">Nuestra Empresa</a></li>
+							<li><a class="trn" href="oficinas.html">Otras Oficinas</a></li>
+							<li><a class="trn" href="flota.html">Nuestra Flota</a></li>
+							
+						</ul>
+					</div>
+				
+				</div>
+			</div>
+			<div class="col-md-4">
+				<h4 class="trn">Contactanos</h4>
+				<a class="text-color-skin-blue" href="https://walink.co/982ef0" target="_blank" style="font-size: 1.8em;"><i class="fa fa-whatsapp"></i> &nbsp;809-852-9976</a>
+				<p><i class="fa fa-map"></i> Aeropuerto Las americas # 50</p>
+				<p><i class="fa fa-phone"></i> <a href="tel:8092586563"> &nbsp;809-258-6563</a></p>
+				
+				<br>
+				<p class="trn">&copy; 2022. Ariel Renta Car. Todos los derechos reservados.</p>
+				<p class="trn">Powered by <a href="https://onemobility.tech/" target="_blank"><img src="images/logo-onemobility.png" width="100px"/></a></p>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- FOOTER -->
+</div>
+
+
+<!-- JAVASCRIPT =============================-->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/vendors/flexslider/flexslider.js"></script>
+<script src="js/vendors/slick/slick.min.js"></script>
+<script src="js/vendors/jquery.placeholder.js"></script>
+<script src="js/vendors/jquery.easing.min.js"></script>
+<script src="js/vendors/mc/jquery.ketchup.all.min.js"></script>
+<script src="js/vendors/mc/main.js"></script>
+<script src="js/vendors/jquery.countdown.min.js"></script>
+<script src="js/vendors/swipebox/js/jquery.swipebox.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
