@@ -785,37 +785,112 @@
 					</article>
 					<!-- Post / Article -->
 					
-					<!-- Post / Article -->
-					<article class="apiom_result_item mt-2">
-					<h2 class="bg-auto trn"> <i class="fa fa-user"></i>	&nbsp; DATOS DEL CLIENTE	</h2>
-						<div class="row ">
-						<div class="col-md-12 col-sm-12 ">
-						<form  id="rentForm" action="" method="post">
-                            <input type="hidden" name="token" value="">
-                            <input type="hidden" name="rctoken" value="">
-                            <input type="hidden" name="method" value="">
-						<div class="row">
-							<div class="col-md-6">
-								<input name="senderName" id="apiom_userNombre" type="text" class="form-control trn" placeholder="Nombre*" required>
-								<input name="senderName" id="apiom_userEmail" type="text" class="form-control trn" placeholder="Email*" required>
-								<input name="senderEmail" id="apiom_userTelefono" type="email" class="form-control trn" placeholder="Teléfono*" required>
-								<input name="senderEmail" id="apiom_userCiudad" type="email" class="form-control trn" placeholder="Ciudad*" required>
-							</div>
-							<div class="col-md-6">
-								<input name="senderEmail" id="apiom_userApellido" type="email" class="form-control trn" placeholder="Apellido*" required>
-								<input name="senderEmail" id="apiom_userDocumento" type="email" class="form-control trn" placeholder="Documento*" required>
-								<input name="senderEmail" id="apiom_userDomicilio" type="email" class="form-control trn" placeholder="Domicilio*" required>
-								<input name="senderEmail" id="apiom_userPais" type="email" class="form-control trn" placeholder="País*" required>
-							</div>
-						</div>
+					
+					
 
-					
-					</form>
-				</div>
-				</div>
-				</article>
-					<!-- Post / Article -->
-					
+                    <article id="apiom_container_methods" style="padding-bottom:20px;">
+                        <h2 class="bg-pagar trn"> <i class="fa fa-user"></i>	&nbsp; MÉTODO DE PAGO	</h2>
+                        <div class="row">
+                           
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label class=" trn">Selector de procesador</label>
+                                    <select class="form-control trn">
+                                        <option>Paypal</option>
+                                        <option>Mercado Pago</option>
+                                        <option>Pago en Destino</option>
+
+                                    </select>
+
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label class=" trn">Método de cobro</label>
+                                        <select class="form-control trn">
+                                            <option>Parcial</option>
+                                            <option>Total</option>
+                                            <option>Pago en destino</option>
+    
+                                        </select>
+    
+                                    </div>
+
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label class=" trn">Cuotas</label>
+                                        <select class="form-control trn">
+                                            <option>1 cuota</option>
+                                            <option>2 cuotas</option>
+                                            <option>3 cuotas</option>
+    
+                                        </select>
+    
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <a class="btn btn-secondary btn-sm  rmore   trn" href="#" style="margin-top:5px; ">Pagar <i class="fa fa-check"></i></a></br>
+                                    </div>
+                               
+                            </div>
+
+                            <div class="">
+                               
+                   
+                             <div class="row">
+                        <div class="col-md-12" >
+                    
+                                <div class=" col-md-12 checkbox " >
+                                    <input class="" id="apiom_check_minmaxage" type="checkbox" name="fd-name" title="" style="margin-left: 0px;" required>
+                                    <label id="apiom_text_edades" for="accept" class="trn">Soy mayor de 21 años, menor de 70 años y cuento con registro de conducir vigente.</label>
+                                    
+                                </div>
+                                <div class="col-md-12" >
+                                <p class="trn" style="font-style:italic;"><i class="ti-info-alt"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tellus mi, cursus vel laoreet eu, auctor nec tellus. </p>
+                                </div>
+                                <div class="col-md-12 checkbox " >
+                                    <input class="apiom_check_terms" id="accept" type="checkbox" name="fd-name" title="" style="margin-left: 0px;" >
+                                    <label for="accept" ><a href="terminos-y-condiciones.html" class="trn">Términos &amp; Condiciones</a></label>
+                                    
+                                </div>
+                                </div>
+                            </div>
+                            
+                            </div>
+                            
+                    </article>
+                        <!-- Post / Article -->
+					<article class="apiom_result_item mt-2">
+                        <h2 class="bg-auto trn"> <i class="fa fa-user"></i>	&nbsp; DATOS DEL CLIENTE	</h2>
+                            <div class="row ">
+                            <div class="col-md-12 col-sm-12 ">
+                            <form  id="rentForm" action="" method="post">
+                                <input type="hidden" name="token" value="">
+                                <input type="hidden" name="rctoken" value="">
+                                <input type="hidden" name="method" value="">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input name="senderName" id="apiom_userNombre" type="text" class="form-control trn" placeholder="Nombre*" required>
+                                    <input name="senderName" id="apiom_userEmail" type="text" class="form-control trn" placeholder="Email*" required>
+                                    <input name="senderEmail" id="apiom_userTelefono" type="email" class="form-control trn" placeholder="Teléfono*" required>
+                                    <input name="senderEmail" id="apiom_userCiudad" type="email" class="form-control trn" placeholder="Ciudad*" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input name="senderEmail" id="apiom_userApellido" type="email" class="form-control trn" placeholder="Apellido*" required>
+                                    <input name="senderEmail" id="apiom_userDocumento" type="email" class="form-control trn" placeholder="Documento*" required>
+                                    <input name="senderEmail" id="apiom_userDomicilio" type="email" class="form-control trn" placeholder="Domicilio*" required>
+                                    <input name="senderEmail" id="apiom_userPais" type="email" class="form-control trn" placeholder="País*" required>
+                                </div>
+                            </div>
+    
+                        
+                        </form>
+                    </div>
+                    </div>
+                    </article>
+                        <!-- Post / Article -->
 				
 					
 					</div>
@@ -986,221 +1061,12 @@
 					</div>
 					</article>
 					
-					<article id="apiom_container_methods" style="padding-bottom:20px;">
-					<h2 class="bg-pagar trn"> <i class="fa fa-user"></i>	&nbsp; MÉTODO DE PAGO	</h2>
-						<div class="">
-				<div class="panel-group payments-options" id="accordion" role="tablist" aria-multiselectable="true">
-                            <div class="panel radio panel-default">
-                               
-                            <div class="panel panel-default apiom_item_method">
-                                <div class="panel-heading" role="tab" id="headingTwo">
-                                    <h4 class="panel-title">
-                                        <a class="collapsed apiom_method_check trn" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapseTwo">
-                                             <i class="fa fa-chevron-right"></i> <span class="apiom_method_description">Promo Hot Sale</span>
-                                        </a>
-										
-                                    </h4>
-                                </div>
-                                <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2" aria-expanded="false" style="height: 0px;">
-                                    
-                                    <form id="contactForm" class="form-search" action="#">
-									 <div class="row" style="margin-top:10px;">
-									 <div class="col-md-12">
-
-                                        <div class="form-group">
-                                          
-                                            <input type="text" class="form-control apiom_method_username trn" id="formSearchUpLocation3" placeholder="Nombre como figura en la tarjeta">
-                                          
-                                        </div>
-										 <div class="form-group  has-label">
-                                            
-                                            <input type="text" class="form-control apiom_method_dni trn" id="formSearchUpLocation3" placeholder="DNI">
-                                          
-                                        </div>
-										 <div class="form-group  has-label">
-                                            
-                                            <input type="text" class="form-control apiom_method_cardnumber trn" id="formSearchUpLocation3" placeholder="Número de tarjeta">
-                                          
-                                        </div>
-										<div class="row">
-									 <div class="col-md-4">
-                                        <div class="form-group has-icon has-label">
-                                       
-                                            <input type="text" class="form-control apiom_method_month trn" id="formSearchOffLocation3" placeholder="Vto. Mes">
-                                           
-                                        </div>
-										</div>
-										 <div class="col-md-4">
-                                        <div class="form-group has-icon has-label">
-                                       
-                                            <input type="text" class="form-control apiom_method_year trn" id="formSearchOffLocation3" placeholder="Vto. Año">
-                                           
-                                        </div>
-										</div>
-										 <div class="col-md-4">
-
-                                        <div class="form-group has-icon has-label">
-                                           <input type="text" class="form-control apiom_method_securitycode trn " id="formSearchUpDate" placeholder="Cod. Seg.">
-                                            
-                                        </div>
-										</div>
-										</div>
-										 </div>
-										  </div>
-										</form>
-                               
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingThree">
-                                    <h4 class="panel-title">
-                                        <a class="collapsed trn" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapseThree">
-                                            <i class="fa fa-chevron-right"></i> Tarjeta de Credito
-                                        </a>
-                               
-                                    </h4>
-                                </div>
-                                <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3" aria-expanded="false" style="height: 0px;">
-								  
-								   
-								    <form id="contactForm" class="form-search" action="#">
-									 <div class="row" style="margin-top:10px;">
-									 <div class="col-md-12">
-
-                                        <div class="form-group">
-                                          
-                                            <input type="text" class="form-control apiom_method_username" id="formSearchUpLocation3 trn" placeholder="Nombre como figura en la tarjeta">
-                                          
-                                        </div>
-										 <div class="form-group  has-label">
-                                            
-                                            <input type="text" class="form-control apiom_method_dni" id="formSearchUpLocation3 trn" placeholder="DNI">
-                                          
-                                        </div>
-										 <div class="form-group  has-label">
-                                            
-                                            <input type="text" class="form-control apiom_method_cardnumber" id="formSearchUpLocation3 trn" placeholder="Número de tarjeta">
-                                          
-                                        </div>
-										<div class="row">
-									 <div class="col-md-4">
-                                        <div class="form-group has-icon has-label">
-                                       
-                                            <input type="text" class="form-control apiom_method_month" id="formSearchOffLocation3 trn" placeholder="Vto. Mes">
-                                           
-                                        </div>
-										</div>
-										 <div class="col-md-4">
-                                        <div class="form-group has-icon has-label">
-                                       
-                                            <input type="text" class="form-control apiom_method_year" id="formSearchOffLocation3 trn" placeholder="Vto. Año">
-                                           
-                                        </div>
-										</div>
-										 <div class="col-md-4">
-
-                                        <div class="form-group has-icon has-label">
-                                           <input type="text" class="form-control apiom_method_securitycode trn " id="formSearchUpDate" placeholder="Cod. Seg.">
-                                            
-                                        </div>
-										</div>
-										</div>
-										 </div>
-										  </div>
-										</form>
-								
-								</div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="heading4">
-                                    <h4 class="panel-title">
-                                        <a class="collapsed trn" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                                             <i class="fa fa-chevron-right"></i> 18 Cuotas sin Interés
-                                        </a>
-                                        <span class="overflowed pull-right" id="content-desktop">
-                                    <span style="font-size: 1.2em;color:#b2b2b2;"> <img src="assets/img/preview/payments/ahora.png" alt=""></span>
-                                    
-                                </span>
-                                    </h4>
-                                </div>
-                                <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4" aria-expanded="false">
-							 <form id="contactForm" class="form-search" action="#">
-									 <div class="row" style="margin-top:10px;">
-									 <div class="col-md-12">
-
-                                        <div class="form-group">
-                                          
-                                            <input type="text" class="form-control apiom_method_username trn" id="formSearchUpLocation3" placeholder="Nombre como figura en la tarjeta">
-                                          
-                                        </div>
-										 <div class="form-group  has-label">
-                                            
-                                            <input type="text" class="form-control apiom_method_dni trn" id="formSearchUpLocation3" placeholder="DNI">
-                                          
-                                        </div>
-										 <div class="form-group  has-label">
-                                            
-                                            <input type="text" class="form-control apiom_method_cardnumber trn" id="formSearchUpLocation3" placeholder="Número de tarjeta">
-                                          
-                                        </div>
-										<div class="row">
-									 <div class="col-md-4">
-                                        <div class="form-group has-icon has-label">
-                                       
-                                            <input type="text" class="form-control apiom_method_month trn" id="formSearchOffLocation3" placeholder="Vto. Mes">
-                                           
-                                        </div>
-										</div>
-										 <div class="col-md-4">
-                                        <div class="form-group has-icon has-label">
-                                       
-                                            <input type="text" class="form-control apiom_method_year trn" id="formSearchOffLocation3" placeholder="Vto. Año">
-                                           
-                                        </div>
-										</div>
-										 <div class="col-md-4">
-
-                                        <div class="form-group has-icon has-label">
-                                           <input type="text" class="form-control apiom_method_securitycode trn " id="formSearchUpDate" placeholder="Cod. Seg.">
-                                            
-                                        </div>
-										</div>
-										</div>
-										 </div>
-										  </div>
-										</form>
-								</div>
-                            </div>
-                        </div>
-						</div>
-						 <div class="row">
-					<div class="col-md-12" >
 				
-							<div class=" col-md-12 checkbox " >
-                                <input class="" id="apiom_check_minmaxage" type="checkbox" name="fd-name" title="" style="margin-left: 0px;" required>
-                                <label id="apiom_text_edades" for="accept" class="trn">Soy mayor de 21 años, menor de 70 años y cuento con registro de conducir vigente.</label>
-								
-                            </div>
-							<div class="col-md-12" >
-							<p class="trn" style="font-style:italic;"><i class="ti-info-alt"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tellus mi, cursus vel laoreet eu, auctor nec tellus. </p>
-							</div>
-							<div class="col-md-12 checkbox " >
-                                <input class="apiom_check_terms" id="accept" type="checkbox" name="fd-name" title="" style="margin-left: 0px;" >
-                                <label for="accept" ><a href="terminos-y-condiciones.html" class="trn">Términos &amp; Condiciones</a></label>
-								
-                            </div>
-							</div>
-						</div>
-						
-						</div>
-						
-				</article>
-					
 					
 					<div class="text-right" style="margin-top: 50px;">
 					
 								
-							<a class="btn btn-default btn-lg rmore apiom_submit_rent trn" href="#" style="margin-top:5px;">Reservar <i class="fa fa-check"></i></a></br>
+							<a class="btn btn-default btn-lg  rmore text-right apiom_submit_rent trn" href="#" style="margin-top:5px; ">Reservar <i class="fa fa-check"></i></a></br>
 							
 							</div>
 					
