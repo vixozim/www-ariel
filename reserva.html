@@ -792,46 +792,140 @@
                         <h2 class="bg-pagar trn"> <i class="fa fa-user"></i>	&nbsp; MÉTODO DE PAGO	</h2>
                         <div class="row">
                            
-                        <div class="col-md-4">
+                        <div class="col-md-2">
+                          					  
                             <div class="form-group">
-                                <label class=" trn">Selector de procesador</label>
-                                    <select class="form-control trn">
-                                        <option>Paypal</option>
-                                        <option>Mercado Pago</option>
-                                        <option>Pago en Destino</option>
-
-                                    </select>
-
-                                </div>
+                            <div class="checkbox " >
+                                <input id="apiom_paypal" type="checkbox" name="fd-name" title="" colspan="2" class="collapsed trn" data-toggle="collapse" data-parent="#accordion" href="#paypal" aria-expanded="false" aria-controls="collapse4" style="cursor: pointer; background-color: #e8e8e8; margin-left: 0px;">
+                                <label  for="paypal" class="trn">Paypal</label>
+                                
                             </div>
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label class=" trn">Método de cobro</label>
-                                        <select class="form-control trn">
-                                            <option>Parcial</option>
-                                            <option>Total</option>
-                                            <option>Pago en destino</option>
-    
-                                        </select>
-    
-                                    </div>
-
+                        </div>
+                        
+                        
                             </div>
-
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label class=" trn">Cuotas</label>
-                                        <select class="form-control trn">
-                                            <option>1 cuota</option>
-                                            <option>2 cuotas</option>
-                                            <option>3 cuotas</option>
-    
-                                        </select>
-    
+                          
+                                <div class="col-md-2">
+                          					  
+                                    <div class="form-group">
+                                    <div class="checkbox " >
+                                        <input id="apiom_destino" type="checkbox" name="fd-name" title="" colspan="2" class="collapsed trn" data-toggle="collapse" data-parent="#accordion" href="#transferencia" aria-expanded="false" aria-controls="collapse4" style="cursor: pointer; background-color: #e8e8e8; margin-left: 0px;">
+                                        <label  for="transferencia" class="trn">Tranferencia</label>
+                                        
                                     </div>
                                 </div>
-                                <div class="col-md-12">
+                                
+                                
+                                    </div>
+                                    <div class="col-md-3">
+                          					  
+                                        <div class="form-group">
+                                        <div class="checkbox " >
+                                            <input id="apiom_mercado_pago" type="checkbox" name="fd-name" title="" colspan="2" class="collapsed trn" data-toggle="collapse" data-parent="#accordion" href="#mepa" aria-expanded="false" aria-controls="collapse4" style="cursor: pointer; background-color: #e8e8e8; margin-left: 0px;">
+                                            <label  for="mepa" class="trn">Mercado Pago</label>
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                        </div>
+                                <div class="col-md-5">
+                          					  
+                                    <div class="form-group">
+                                    <div class="checkbox " >
+                                        <input id="apiom_tarjeta" type="checkbox" name="destino" title="" colspan="2" class="collapsed trn" data-toggle="collapse" data-parent="#accordion" href="#destino" aria-expanded="false" aria-controls="collapse4" style="cursor: pointer; background-color: #e8e8e8; margin-left: 0px;">
+                                        <label  for="destino" class="trn">Tarjeta de Crédito/Destino</label>
+                                        
+                                    </div>
+                                </div>
+                                
+                                
+                                    </div>
+                                    
+
+                                <div class="col-md-12 panel-collapse collapse" id="paypal" class="" role="tabpanel" aria-labelledby="heading4" aria-expanded="false">
                                     <a class="btn btn-secondary btn-sm  rmore   trn" href="#" style="margin-top:5px; ">Pagar <i class="fa fa-check"></i></a></br>
+                                    </div>
+
+                                    <div class="col-md-12 panel-collapse collapse" id="mepa" class="" role="tabpanel" aria-labelledby="heading4" aria-expanded="false">
+                                        <a class="btn btn-secondary btn-sm  rmore   trn" href="#" style="margin-top:5px; ">Pagar <i class="fa fa-check"></i></a></br>
+                                        </div>
+                                        <div class="col-md-12 panel-collapse collapse" id="transferencia" class="" role="tabpanel" aria-labelledby="heading4" aria-expanded="false">
+                                           <img src="images/ejemplo_datos_bancarios.jpg" class="img-responsive">
+                                            </div>
+                                <div class="col-md-12 panel-collapse collapse" id="destino" class="" role="tabpanel" aria-labelledby="heading4" aria-expanded="false">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label class=" trn">Método de cobro</label>
+                                                <select class="form-control trn">
+                                                    <option>Parcial</option>
+                                                    <option>Total</option>
+                                                    <option>Pago en destino</option>
+            
+                                                </select>
+            
+                                            </div>
+        
+                                    </div>
+        
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label class=" trn">Cuotas</label>
+                                                <select class="form-control trn">
+                                                    <option>1 cuota</option>
+                                                    <option>2 cuotas</option>
+                                                    <option>3 cuotas</option>
+            
+                                                </select>
+            
+                                            </div>
+                                        </div>
+                                        <form id="contactForm" class="form-search" action="#">
+                                            <div class="row" style="margin-top:10px;">
+                                            <div class="col-md-12">
+       
+                                               <div class="form-group">
+                                                 
+                                                   <input required="" type="text" class="form-control apiom_method_username trn" placeholder="Nombre como figura en la tarjeta">
+                                                 
+                                               </div>
+                                                <div class="form-group  has-label">
+                                                   
+                                                   <input required="" type="text" class="form-control apiom_method_dni trn" placeholder="DNI">
+                                                 
+                                               </div>
+                                                <div class="form-group  has-label">
+                                                   
+                                                   <input required="" type="text" class="form-control apiom_method_cardnumber trn" placeholder="Número de tarjeta">
+                                                 
+                                               </div>
+                                               <div class="row">
+                                            <div class="col-md-4">
+                                               <div class="form-group has-icon has-label">
+                                              
+                                                   <input required="" type="text" class="form-control apiom_method_month trn" id="formSearchOffLocation3" placeholder="Vto. Mes">
+                                                  
+                                               </div>
+                                               </div>
+                                                <div class="col-md-4">
+                                               <div class="form-group has-icon has-label">
+                                              
+                                                   <input required="" type="text" class="form-control apiom_method_year trn" id="formSearchOffLocation3" placeholder="Vto. Año">
+                                                  
+                                               </div>
+                                               </div>
+                                                <div class="col-md-4">
+       
+                                               <div class="form-group has-icon has-label">
+                                                  <input required="" type="text" class="form-control apiom_method_securitycode trn " id="formSearchUpDate" placeholder="Cod. Seg.">
+                                                   
+                                               </div>
+                                               </div>
+                                               </div>
+                                                </div>
+                                                 </div>
+                                               </form>
+                                               <a class="btn btn-secondary btn-sm  rmore   trn" href="#" style="margin-top:5px; ">Pagar <i class="fa fa-check"></i></a></br>
                                     </div>
                                
                             </div>
